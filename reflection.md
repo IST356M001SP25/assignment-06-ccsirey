@@ -23,3 +23,10 @@ Examples:
 
 `--- Reflection Below This Line ---`
 
+I was able to handle the API calls section fairly easily, the one exception was the part, where the asserted value was different than where I came up with. I figured out that I just needed to go into the test section and change the expected value.
+
+Moving onto the next part, I was able to complete the first step (review extraction) by calling the Google Places API and formatting the data as expected. However, I ran into issues with file paths that caused the unit tests to fail. Specifically, the test could not locate the expected cache/reviews.csv file, which I later realized was due to a mismatch between the path used in the code and the directory from which I was running the script.
+
+Despite using the correct file structure and consulting both provided solutions and external help (including ChatGPT), I struggled to resolve the pathing issue consistently. I learned that relative paths in Python depend heavily on where the script is run from, and using os.path.join() with __file__ is a more reliable approach to making scripts portable. Despite learninjg about this option. I still wasn;t able to correctly connect the path. I still wasn't really able to figure out what my issue was in the end. That being said, I've never been the best at file paths so establishing a base area to path from will be helpful to me in the future.
+
+Although I wasn’t able to complete all three steps by the deadline, this assignment helped me better understand how to work with APIs, JSON normalization, and the importance of managing file paths and directories properly in larger projects. It also showed me the value of breaking down the problem and seeking help when I got stuck.
