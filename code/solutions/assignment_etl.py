@@ -14,7 +14,7 @@ CACHE_REVIEWS_FILE = "cache/reviews.csv"
 CACHE_SENTIMENT_FILE = "cache/reviews_sentiment_by_sentence.csv"
 CACHE_ENTITIES_FILE = "cache/reviews_sentiment_by_sentence_with_entities.csv"
 
-
+#change file paths
 def reviews_step(place_ids: str|pd.DataFrame) -> pd.DataFrame:
     '''
       1. place_ids --> reviews_step --> reviews: place_id, name (of place), author_name, rating, text 
